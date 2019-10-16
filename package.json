@@ -1,0 +1,15 @@
+{
+  "name": "gmail-exploration",
+  "version": "1.0.0",
+  "description": "Gmail Exploration",
+  "main": "index.js",
+  "repository": "https://github.com/bervProject/gmail-exploration.git",
+  "author": "Bervianto Leo Pratama <bervianto.leo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^44.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
