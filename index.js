@@ -1,9 +1,11 @@
 const fs = require('fs');
 const readline = require('readline');
-const {google} = require('googleapis');
+const { google } = require('googleapis');
 
 // If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
+const SCOPES = [
+  'https://www.googleapis.com/auth/gmail.modify'
+];
 // The file token.json stores the user's access and refresh tokens, and is
 // created automatically when the authorization flow completes for the first
 // time.
@@ -23,9 +25,9 @@ fs.readFile('credentials.json', (err, content) => {
  * @param {function} callback The callback to call with the authorized client.
  */
 function authorize(credentials, callback) {
-  const {client_secret, client_id, redirect_uris} = credentials.installed;
+  const { client_secret, client_id, redirect_uris } = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
-      client_id, client_secret, redirect_uris[0]);
+    client_id, client_secret, redirect_uris[0]);
 
   // Check if we have previously stored a token.
   fs.readFile(TOKEN_PATH, (err, token) => {
@@ -72,8 +74,8 @@ function getNewToken(oAuth2Client, callback) {
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
 function listLabels(auth) {
-  const gmail = google.gmail({version: 'v1', auth});
-  gmail.users.labels.list({
+  const gmail = google.gmail({ version: 'v1', auth });
+  /*gmail.users.labels.list({
     userId: 'me',
   }, (err, res) => {
     if (err) return console.log('The API returned an error: ' + err);
@@ -81,10 +83,60 @@ function listLabels(auth) {
     if (labels.length) {
       console.log('Labels:');
       labels.forEach((label) => {
-        console.log(`- ${label.name}`);
+        console.log(`${label.id} - ${label.name}`);
       });
     } else {
       console.log('No labels found.');
     }
+  });*/
+  setupLabels(gmail, undefined);
+}
+
+let totalProccess = 0;
+
+function setupLabels(gmail, nextPageToken) {
+
+  gmail.users.messages.list({
+    userId: 'me',
+    q: 'from:postmaster@invoices.go-jek.com',
+    pageToken: nextPageToken,
+  }, (err, res) => {
+    if (err) return console.log('The API returned an error: ' + err);
+    const messages = res.data.messages;
+    totalProccess += res.data.resultSizeEstimate;
+    console.log(totalProccess);
+    console.log(res.data.resultSizeEstimate);
+    console.log(res.data.nextPageToken);
+    if (messages.length) {
+      console.log('Messages:');
+      //var pesan = JSON.stringify(messages);
+      var labels = ['Label_7272199323353827738'];
+      var messagesId = messages.map((q) => q.id);
+      //messages.forEach((message) => {
+      //  console.log(`- ${message.id}`);
+      //});
+      gmail.users.messages.batchModify({
+        userId: 'me',
+        requestBody: {
+          ids: messagesId,
+          addLabelIds: labels
+        }
+      }
+        , (err, res) => {
+          if (err)
+            return console.log(err);
+          console.log("Success batch update");
+        });
+
+      //console.log(pesan);
+    } else {
+      console.log('No messages found.');
+    }
+    if (res.data.nextPageToken) {
+      setupLabels(gmail, res.data.nextPageToken);
+    } else {
+      return;
+    }
   });
+
 }

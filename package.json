@@ -9,6 +9,7 @@
   "dependencies": {
     "googleapis": "^44.0.0"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "node index.js"
   }
