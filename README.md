@@ -1,2 +1,7 @@
-# gmail-exploration
- Initial Repo for Exploration About Gmail API
+# Gmail Exploration
+
+Gmail Exploration - Prepare automation for manage email in Gmail
+
+## License
+
+MIT

@@ -1,6 +1,6 @@
-const fs = require('fs');
-const readline = require('readline');
-const { google } = require('googleapis');
+import fs from 'fs';
+import readline from 'readline';
+import { google, gmail_v1 } from 'googleapis';
 
 // If modifying these scopes, delete token.json.
 const SCOPES = [
@@ -15,7 +15,8 @@ const TOKEN_PATH = 'token.json';
 fs.readFile('credentials.json', (err, content) => {
   if (err) return console.log('Error loading client secret file:', err);
   // Authorize a client with credentials, then call the Gmail API.
-  authorize(JSON.parse(content), listLabels);
+
+  authorize(JSON.parse(content.toString()), listLabels);
 });
 
 /**
@@ -24,7 +25,7 @@ fs.readFile('credentials.json', (err, content) => {
  * @param {Object} credentials The authorization client credentials.
  * @param {function} callback The callback to call with the authorized client.
  */
-function authorize(credentials, callback) {
+function authorize(credentials: any, callback: any) {
   const { client_secret, client_id, redirect_uris } = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
     client_id, client_secret, redirect_uris[0]);
@@ -32,7 +33,7 @@ function authorize(credentials, callback) {
   // Check if we have previously stored a token.
   fs.readFile(TOKEN_PATH, (err, token) => {
     if (err) return getNewToken(oAuth2Client, callback);
-    oAuth2Client.setCredentials(JSON.parse(token));
+    oAuth2Client.setCredentials(JSON.parse(token.toString()));
     callback(oAuth2Client);
   });
 }
@@ -43,7 +44,7 @@ function authorize(credentials, callback) {
  * @param {google.auth.OAuth2} oAuth2Client The OAuth2 client to get token for.
  * @param {getEventsCallback} callback The callback for the authorized client.
  */
-function getNewToken(oAuth2Client, callback) {
+function getNewToken(oAuth2Client: any, callback: any) {
   const authUrl = oAuth2Client.generateAuthUrl({
     access_type: 'offline',
     scope: SCOPES,
@@ -55,7 +56,7 @@ function getNewToken(oAuth2Client, callback) {
   });
   rl.question('Enter the code from that page here: ', (code) => {
     rl.close();
-    oAuth2Client.getToken(code, (err, token) => {
+    oAuth2Client.getToken(code, (err: any, token: any) => {
       if (err) return console.error('Error retrieving access token', err);
       oAuth2Client.setCredentials(token);
       // Store the token to disk for later program executions
@@ -73,7 +74,7 @@ function getNewToken(oAuth2Client, callback) {
  *
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
-function listLabels(auth) {
+function listLabels(auth: any) {
   const gmail = google.gmail({ version: 'v1', auth });
   /*gmail.users.labels.list({
     userId: 'me',
@@ -94,13 +95,13 @@ function listLabels(auth) {
 
 let totalProccess = 0;
 
-function setupLabels(gmail, nextPageToken) {
+function setupLabels(gmail: any, nextPageToken: any) {
 
   gmail.users.messages.list({
     userId: 'me',
     q: 'from:postmaster@invoices.go-jek.com',
     pageToken: nextPageToken,
-  }, (err, res) => {
+  }, (err: any, res: any) => {
     if (err) return console.log('The API returned an error: ' + err);
     const messages = res.data.messages;
     totalProccess += res.data.resultSizeEstimate;
@@ -122,7 +123,7 @@ function setupLabels(gmail, nextPageToken) {
           addLabelIds: labels
         }
       }
-        , (err, res) => {
+        , (err: any, res: any) => {
           if (err)
             return console.log(err);
           console.log("Success batch update");
