@@ -12,7 +12,7 @@
   "devDependencies": {
     "@types/node": "^14.0.23",
     "ts-node-dev": "^1.0.0-pre.52",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
