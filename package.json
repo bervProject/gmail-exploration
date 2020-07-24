@@ -10,7 +10,7 @@
     "googleapis": "^55.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.24",
+    "@types/node": "^14.0.25",
     "ts-node-dev": "^1.0.0-pre.52",
     "typescript": "^3.9.7"
   },
