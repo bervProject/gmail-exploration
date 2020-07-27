@@ -7,7 +7,7 @@
   "author": "Bervianto Leo Pratama <bervianto.leo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "googleapis": "^55.0.0"
+    "googleapis": "^56.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.0.25",
