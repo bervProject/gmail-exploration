@@ -1,6 +1,6 @@
 import fs from 'fs';
 import readline from 'readline';
-import { google, gmail_v1 } from 'googleapis';
+import { google } from 'googleapis';
 
 // If modifying these scopes, delete token.json.
 const SCOPES = [
@@ -112,7 +112,7 @@ function setupLabels(gmail: any, nextPageToken: any) {
       console.log('Messages:');
       //var pesan = JSON.stringify(messages);
       var labels = ['Label_7272199323353827738'];
-      var messagesId = messages.map((q) => q.id);
+      var messagesId = messages.map((q: any) => q.id);
       //messages.forEach((message) => {
       //  console.log(`- ${message.id}`);
       //});
@@ -141,3 +141,5 @@ function setupLabels(gmail: any, nextPageToken: any) {
   });
 
 }
+
+export default { listLabels };
