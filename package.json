@@ -1,27 +1,40 @@
 {
   "name": "gmail-exploration",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gmail Exploration",
   "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/bervProject/gmail-exploration.git",
   "author": "Bervianto Leo Pratama <bervianto.leo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "googleapis": "^67.1.0"
+    "googleapis": "^73.0.0",
+    "node-cron": "^3.0.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.31",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.3.0",
+    "@types/node-cron": "^2.0.3",
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
-    "ts-jest": "^26.5.2",
+    "rollup": "^2.48.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^26.5.6",
     "ts-node-dev": "^1.1.6",
-    "typescript": "^4.2.2"
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   },
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/",
     "start": "node dist/",
-    "build": "tsc",
+    "build": "rollup -c",
     "test": "cross-env NODE_ENV=test jest --testTimeout=60000 --coverage"
   }
 }
