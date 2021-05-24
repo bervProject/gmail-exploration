@@ -1,6 +1,6 @@
 import fs from "fs";
 import readline from "readline";
-import { google } from "googleapis";
+import gmail from "@googleapis/gmail";
 import logger from "./logger";
 
 // If modifying these scopes, delete token.json.
@@ -30,7 +30,7 @@ function start() {
  */
 function authorize(credentials: any, callback: any) {
   const { client_secret, client_id, redirect_uris } = credentials.installed;
-  const oAuth2Client = new google.auth.OAuth2(
+  const oAuth2Client = new gmail.auth.OAuth2(
     client_id,
     client_secret,
     redirect_uris[0]
@@ -81,8 +81,8 @@ function getNewToken(oAuth2Client: any, callback: any) {
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
 function removeSpam(auth: any) {
-  const gmail = google.gmail({ version: "v1", auth });
-  gmail.users.messages
+  const gmailClient = gmail.gmail({ version: "v1", auth });
+  gmailClient.users.messages
     .list({
       labelIds: ["SPAM"],
       userId: "me",
@@ -96,7 +96,7 @@ function removeSpam(auth: any) {
           .filter((data) => data !== undefined && data !== null)
           .map((data) => data as string);
         logger.info(`Will remove: ${JSON.stringify(messagesId)}`);
-        gmail.users.messages
+        gmailClient.users.messages
           .batchDelete({
             userId: "me",
             requestBody: {
