@@ -1,6 +1,6 @@
 import fs from "fs";
 import readline from "readline";
-import gmail from "@googleapis/gmail";
+import * as gmail from "@googleapis/gmail";
 import logger from "./logger";
 
 // If modifying these scopes, delete token.json.
