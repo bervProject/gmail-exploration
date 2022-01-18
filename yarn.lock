@@ -304,10 +304,10 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@googleapis/gmail@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/@googleapis/gmail/-/gmail-0.2.0.tgz#140a682522ac746f748743d8ffabf99a3f34730c"
-  integrity sha512-Zctm/l1lRXGWACJkwxAM4+FolBWg+oDJTIt/HEwPWwS4BKHrhZT2RMyckr4b7ddp0duKxdyGnlfws+Pwg9GTfw==
+"@googleapis/gmail@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-0.3.1.tgz#19ca499dd0373c9007ecb6e50ba13f36d1ed2276"
+  integrity sha512-Ejhjce7D2aFOLKQWlL3p+oamJNO355IEAjl6m1zgWR/288ZuqDmr8GFOlRr5msGHDhAfOxfWW+wwBv7AO4tppQ==
   dependencies:
     googleapis-common "^5.0.1"
 
