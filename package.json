@@ -13,7 +13,7 @@
   "dependencies": {
     "@googleapis/gmail": "^0.3.2",
     "node-cron": "^3.0.1",
-    "winston": "^3.7.2"
+    "winston": "^3.8.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
