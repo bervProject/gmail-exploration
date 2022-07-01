@@ -24,7 +24,7 @@
     "@types/node-cron": "^3.0.1",
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
-    "rollup": "^2.75.4",
+    "rollup": "^2.75.7",
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^26.5.6",
     "ts-node-dev": "^2.0.0",
