@@ -18,7 +18,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^8.5.0",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@types/jest": "^27.4.1",
     "@types/node": "^18.7.23",
     "@types/node-cron": "^3.0.5",
