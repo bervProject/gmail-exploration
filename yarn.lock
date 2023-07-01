@@ -316,10 +316,10 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@googleapis/gmail@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-2.0.1.tgz#d23285599e049a7bfac45314d7b90e0839ed865b"
-  integrity sha512-MmHhdobNP1Jp9tp0cwrLu6kxrRlkvaKVPSeJk0s99cvEtZm/SjCwJ8VWthtsgWtBlwVOh4PoFl3VLapvcnWvkw==
+"@googleapis/gmail@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-3.0.0.tgz#aa2c512cd4c5ac7471de0cc95220618eaef35ed2"
+  integrity sha512-Wa9ySyle0gSgmL8cFPKD5h5nO8dwJ3Jg2D4gvTFp3CGN1QOXrOHjdGixLzghDo6zks4s3yN95cOfVzw2HzSjWQ==
   dependencies:
     googleapis-common "^6.0.3"
 
