@@ -11,7 +11,7 @@
   "author": "Bervianto Leo Pratama <bervianto.leo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@googleapis/gmail": "^6.1.0",
+    "@googleapis/gmail": "^7.0.0",
     "node-cron": "^3.0.3",
     "winston": "^3.11.0"
   },
