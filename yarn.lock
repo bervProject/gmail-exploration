@@ -394,10 +394,10 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@googleapis/gmail@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-9.2.0.tgz#f83357a3816a9469bcf34052f9e6dad67653bbed"
-  integrity sha512-MrGx59y7d+tx8Vt2U6umK0Eq6SXV1tMsswKiWduhxmVKCPMHCPaIc1i2qoVphRNTdhFD7Uw5oOf2alsJFDKVuA==
+"@googleapis/gmail@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-12.0.0.tgz#f67fa55293cfa45acbdad977ecc92ad73601e335"
+  integrity sha512-sMsgh7J4pRIzmgte4vPfcxBptKliquVXlc9nhIWvuDfdkEVkyP8yh5pkhAnZmStEF0I5iOI04zriAt4C98XhBw==
   dependencies:
     googleapis-common "^7.0.0"
 
