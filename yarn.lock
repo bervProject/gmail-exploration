@@ -389,10 +389,10 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@googleapis/gmail@^13.0.1":
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-13.0.1.tgz#fe5c7eed5345f023f4c8628abc22a030b7c24078"
-  integrity sha512-1XHjhjaavr5/dawryUzgNJ0Hkd09p6uL5RjzC3E9OFNrm3B+NdyMiZnqCETwySUmpB6AWlAGOItSPzINOYf7UA==
+"@googleapis/gmail@^14.0.1":
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-14.0.1.tgz#6ba79bfd71947e1f6cc18ec8a9cd0e2dbce1d683"
+  integrity sha512-o2DExet8JjZd2UMpwrZZunxOVjvBzB2c37wepeszC+Dyi0tYsvqkTSrSrVTD4uzxnjr0pQVbqN6YoA0it6M1Sw==
   dependencies:
     googleapis-common "^8.0.2-rc.0"
 
