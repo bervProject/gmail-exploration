@@ -394,12 +394,12 @@
   resolved "https://registry.yarnpkg.com/@epic-web/invariant/-/invariant-1.0.0.tgz#1073e5dee6dd540410784990eb73e4acd25c9813"
   integrity sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==
 
-"@googleapis/gmail@^14.0.1":
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-14.0.1.tgz#6ba79bfd71947e1f6cc18ec8a9cd0e2dbce1d683"
-  integrity sha512-o2DExet8JjZd2UMpwrZZunxOVjvBzB2c37wepeszC+Dyi0tYsvqkTSrSrVTD4uzxnjr0pQVbqN6YoA0it6M1Sw==
+"@googleapis/gmail@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-15.0.0.tgz#07a77ba7ff777370c5dcde1f034ff8f51cf52152"
+  integrity sha512-H4VsX2Hnx8DFZ4KdtuurcAqFUerfvLiitKhqq4BTBUM1u4y8dgWoGeVjz7+gWtMJl6/hUDCd0H8JaiU7pFNaOA==
   dependencies:
-    googleapis-common "^8.0.2-rc.0"
+    googleapis-common "^8.0.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -2045,10 +2045,10 @@ globals@^11.1.0:
   resolved "https://registry.npmjs.org/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-google-auth-library@^10.0.0-rc.1:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-10.1.0.tgz#5412fa2b7f2c4fe169c6cc56b9425319137e17e9"
-  integrity sha512-GspVjZj1RbyRWpQ9FbAXMKjFGzZwDKnUHi66JJ+tcjcu5/xYAP1pdlWotCuIkMwjfVsxxDvsGZXGLzRt72D0sQ==
+google-auth-library@^10.1.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-10.4.0.tgz#2d5e36f3e0b0f33b1c5466a2f25617ff2c258c91"
+  integrity sha512-CmIrSy1bqMQUsPmA9+hcSbAXL80cFhu40cGMUjCaLpNKVzzvi+0uAHq8GNZxkoGYIsTX4ZQ7e4aInAqWxgn4fg==
   dependencies:
     base64-js "^1.3.0"
     ecdsa-sig-formatter "^1.0.11"
@@ -2063,14 +2063,14 @@ google-logging-utils@^1.0.0:
   resolved "https://registry.yarnpkg.com/google-logging-utils/-/google-logging-utils-1.1.1.tgz#4a1f44a69a187eb954629c88c5af89c0dfbca51a"
   integrity sha512-rcX58I7nqpu4mbKztFeOAObbomBbHU2oIb/d3tJfF3dizGSApqtSwYJigGCooHdnMyQBIw8BrWyK96w3YXgr6A==
 
-googleapis-common@^8.0.2-rc.0:
-  version "8.0.2-rc.0"
-  resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-8.0.2-rc.0.tgz#6451ca56711176207cf32fa1b40d4274785f9d2d"
-  integrity sha512-JTcxRvmFa9Ec1uyfMEimEMeeKq1sHNZX3vn2qmoUMtnvixXXvcqTcbDZvEZXkEWpGlPlOf4joyep6/qs0BrLyg==
+googleapis-common@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-8.0.0.tgz#7a3ea3aa3863c9d3e7635070314d639dadfa164a"
+  integrity sha512-66if47It7y+Sab3HMkwEXx1kCq9qUC9px8ZXoj1CMrmLmUw81GpbnsNlXnlyZyGbGPGcj+tDD9XsZ23m7GLaJQ==
   dependencies:
     extend "^3.0.2"
     gaxios "^7.0.0-rc.4"
-    google-auth-library "^10.0.0-rc.1"
+    google-auth-library "^10.1.0"
     qs "^6.7.0"
     url-template "^2.0.8"
 
