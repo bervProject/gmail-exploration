@@ -394,10 +394,10 @@
   resolved "https://registry.yarnpkg.com/@epic-web/invariant/-/invariant-1.0.0.tgz#1073e5dee6dd540410784990eb73e4acd25c9813"
   integrity sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==
 
-"@googleapis/gmail@^15.0.0":
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-15.0.0.tgz#07a77ba7ff777370c5dcde1f034ff8f51cf52152"
-  integrity sha512-H4VsX2Hnx8DFZ4KdtuurcAqFUerfvLiitKhqq4BTBUM1u4y8dgWoGeVjz7+gWtMJl6/hUDCd0H8JaiU7pFNaOA==
+"@googleapis/gmail@^16.1.1":
+  version "16.1.1"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-16.1.1.tgz#3cf1b4e90ea27649a569e42feabf9133dd801d0d"
+  integrity sha512-XFMMJvhpEoKzwBOHYrcbBu/jHS+8Aer5YmbMUsrZeJgXAbTD6K7K6+/1RJczXIqDoBzVDdECm4WtjAcvEHPLVg==
   dependencies:
     googleapis-common "^8.0.0"
 
