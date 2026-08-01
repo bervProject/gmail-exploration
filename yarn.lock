@@ -2946,10 +2946,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-node-cron@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/node-cron/-/node-cron-4.5.0.tgz#284908d302415a32e0774b3a8c8184d423e262a8"
-  integrity sha512-4Trh+kjvbXokyJkwQumvD5YAgeJfgHLR/sKyu71uSmxfCR5QMO1hldpvmFZOICN5pLgNY+J5Y8+ar3XKo5/4tQ==
+node-cron@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/node-cron/-/node-cron-4.6.0.tgz#5c854d4aeebade26cf6df79a795e8a4bae47583f"
+  integrity sha512-Si/bzYiKRHOB8/a99T2+SDGN582ONDMSTlJr5oCkT6GtnqPjZ2s10eoQRYkW9ZHwjVxONL+W8Fb+qR0AHMQsdg==
 
 node-domexception@^1.0.0:
   version "1.0.0"
