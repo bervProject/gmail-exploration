@@ -402,10 +402,10 @@
   resolved "https://registry.yarnpkg.com/@epic-web/invariant/-/invariant-1.0.0.tgz#1073e5dee6dd540410784990eb73e4acd25c9813"
   integrity sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==
 
-"@googleapis/gmail@^17.0.0":
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-17.0.0.tgz#3d9b9aca86ade7bda882f0ddda135191dc30f765"
-  integrity sha512-pV0E+has0ZCqIJoaTmQkOyuRXDtcC8bvH+hmoqGH+J2qxEzhsLT3VX69v6Ef7bifhwokYH82rgQlMRHpFDLrmw==
+"@googleapis/gmail@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-18.0.0.tgz#ab0bb2922ed89c1379c012d91f526bc58d43a174"
+  integrity sha512-qC8CaF3mgi8ZMm7IYK1Pk6AF3z2v1IE++8rtn+Mmpx+zIhbS9MMazY7+WicwgLKKskn5zQLXCoNv0Jn7OdFfPg==
   dependencies:
     googleapis-common "^8.0.0"
 
