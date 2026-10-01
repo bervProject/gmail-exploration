@@ -402,12 +402,12 @@
   resolved "https://registry.yarnpkg.com/@epic-web/invariant/-/invariant-1.0.0.tgz#1073e5dee6dd540410784990eb73e4acd25c9813"
   integrity sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==
 
-"@googleapis/gmail@^18.0.0":
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-18.0.0.tgz#ab0bb2922ed89c1379c012d91f526bc58d43a174"
-  integrity sha512-qC8CaF3mgi8ZMm7IYK1Pk6AF3z2v1IE++8rtn+Mmpx+zIhbS9MMazY7+WicwgLKKskn5zQLXCoNv0Jn7OdFfPg==
+"@googleapis/gmail@^22.0.1":
+  version "22.0.1"
+  resolved "https://registry.yarnpkg.com/@googleapis/gmail/-/gmail-22.0.1.tgz#c97efcc82af8416d124a470f7c65ab9b6113148b"
+  integrity sha512-v/RGUAWmYQQWLivB/tUcoecxC4ortqvtfzaRloUfcv6hogMyenq8HxdJDShFtSEGVF4of+H+b4xiL6yBlxcTmA==
   dependencies:
-    googleapis-common "^8.0.0"
+    googleapis-common "^9.0.0"
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -2109,22 +2109,22 @@ function-bind@^1.1.2:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.2.tgz#2c02d864d97f3ea6c8830c464cbd11ab6eab7a1c"
   integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
 
-gaxios@^7.0.0, gaxios@^7.0.0-rc.4:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/gaxios/-/gaxios-7.1.1.tgz#255b86ce09891e9ed16926443a1ce239c8f9fd51"
-  integrity sha512-Odju3uBUJyVCkW64nLD4wKLhbh93bh6vIg/ZIXkWiLPBrdgtc65+tls/qml+un3pr6JqYVFDZbbmLDQT68rTOQ==
+gaxios@^7.1.3, gaxios@^7.1.4, gaxios@^7.3.0:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/gaxios/-/gaxios-7.3.1.tgz#b26223db05856dfa5e2393ea376abad00e479c62"
+  integrity sha512-kB3rzJV7d9juLZh8/56QTXCwQfxyhdOMdyYk1HdQKFtF8TJTDTZQJtixWIwXdE9Jji91mC41DUNpjleo4L4eAQ==
   dependencies:
     extend "^3.0.2"
     https-proxy-agent "^7.0.1"
     node-fetch "^3.3.2"
 
-gcp-metadata@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/gcp-metadata/-/gcp-metadata-7.0.1.tgz#43bb9cd482cf0590629b871ab9133af45b78382d"
-  integrity sha512-UcO3kefx6dCcZkgcTGgVOTFb7b1LlQ02hY1omMjjrrBzkajRMCFgYOjs7J71WqnuG1k2b+9ppGL7FsOfhZMQKQ==
+gcp-metadata@^9.0.0:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/gcp-metadata/-/gcp-metadata-9.0.4.tgz#4ab61c8d9f8eb042801321fc73183b2b7eb82eef"
+  integrity sha512-p6WvbXOhfwnVtv/MyPq5kBiVhfV/qglMIxwwTVNEI1Ha1HmOgz5uHYHtYO6SfGckFaXe8blA11IJJ3wqXmvmBA==
   dependencies:
-    gaxios "^7.0.0"
-    google-logging-utils "^1.0.0"
+    gaxios "^7.1.3"
+    google-logging-utils "^2.0.0"
     json-bigint "^1.0.0"
 
 gensync@^1.0.0-beta.2:
@@ -2211,32 +2211,32 @@ glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-google-auth-library@^10.1.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-10.4.0.tgz#2d5e36f3e0b0f33b1c5466a2f25617ff2c258c91"
-  integrity sha512-CmIrSy1bqMQUsPmA9+hcSbAXL80cFhu40cGMUjCaLpNKVzzvi+0uAHq8GNZxkoGYIsTX4ZQ7e4aInAqWxgn4fg==
+google-auth-library@^11.0.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-11.1.0.tgz#3b9270a497ac7d4632928d2065876cebd745c0fc"
+  integrity sha512-YIBq5KNoHQrZ9PM4PeodDBqqBGlSTIxh1zibN8u3zNIO9UJg8gvKuCpdKV7fWXhsZ2zRkU6FhGrgKNgLJ2IRgw==
   dependencies:
     base64-js "^1.3.0"
     ecdsa-sig-formatter "^1.0.11"
-    gaxios "^7.0.0"
-    gcp-metadata "^7.0.0"
-    google-logging-utils "^1.0.0"
-    gtoken "^8.0.0"
+    gaxios "^7.1.4"
+    gcp-metadata "^9.0.0"
+    google-logging-utils "^2.0.0"
     jws "^4.0.0"
 
-google-logging-utils@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/google-logging-utils/-/google-logging-utils-1.1.1.tgz#4a1f44a69a187eb954629c88c5af89c0dfbca51a"
-  integrity sha512-rcX58I7nqpu4mbKztFeOAObbomBbHU2oIb/d3tJfF3dizGSApqtSwYJigGCooHdnMyQBIw8BrWyK96w3YXgr6A==
+google-logging-utils@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/google-logging-utils/-/google-logging-utils-2.0.1.tgz#d78b34f4250db9ee816f29fee3321939296bcb8a"
+  integrity sha512-HMhaQghlOTvbcb3c4T5jmmOMtG3JUF1iOQMezaJXL86CDS+Tm2vHd0IeLFRAx3+ewd+bo9E1HFHoy17X5aJa9A==
 
-googleapis-common@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-8.0.0.tgz#7a3ea3aa3863c9d3e7635070314d639dadfa164a"
-  integrity sha512-66if47It7y+Sab3HMkwEXx1kCq9qUC9px8ZXoj1CMrmLmUw81GpbnsNlXnlyZyGbGPGcj+tDD9XsZ23m7GLaJQ==
+googleapis-common@^9.0.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/googleapis-common/-/googleapis-common-9.1.0.tgz#0a70d73509b5f9b602a12c1fad7b7868eb9d81d0"
+  integrity sha512-UJBElspYPJb0+fI8q0LxARw1hPnwd9yd5NqhKqEUPxjhnB1jdsRP7rlRTBp69JS5Vo10bCiRE9+ISsIG2A+Ttg==
   dependencies:
     extend "^3.0.2"
-    gaxios "^7.0.0-rc.4"
-    google-auth-library "^10.1.0"
+    gaxios "^7.3.0"
+    google-auth-library "^11.0.0"
+    google-logging-utils "^2.0.0"
     qs "^6.7.0"
     url-template "^2.0.8"
 
@@ -2249,14 +2249,6 @@ graceful-fs@^4.2.11:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
-
-gtoken@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/gtoken/-/gtoken-8.0.0.tgz#d67a0e346dd441bfb54ad14040ddc3b632886575"
-  integrity sha512-+CqsMbHPiSTdtSO14O51eMNlrp9N79gmeqmXeouJOhfucAedHw9noVe/n5uJk3tbKE6a+6ZCQg3RPhVhHByAIw==
-  dependencies:
-    gaxios "^7.0.0"
-    jws "^4.0.0"
 
 handlebars@^4.7.9:
   version "4.7.9"
